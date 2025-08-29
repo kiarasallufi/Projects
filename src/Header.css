@@ -1,0 +1,50 @@
+
+.header {
+  background-color: rgb(182, 129, 231);
+  color: white;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0; 
+  width: 100%;
+  z-index: 1000; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 30px;
+  margin: 0;
+  font-weight: 600;
+  flex-shrink: 0; 
+}
+
+.spacer {
+  flex-grow: 1; 
+}
+
+.header-buttons {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+
+button {
+  background-color: rgb(182, 129, 231); 
+  color: white;
+  border: none;
+  padding: 2px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: transform 0.2s ease; 
+}
+
+button:hover {
+  transform: scale(1.05); 
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
