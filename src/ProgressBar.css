@@ -1,0 +1,125 @@
+/* Progress Container */
+.progress-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Status Label - Positioned above the progress bar and aligned to the left */
+.status-label {
+  text-align: left;
+  padding-left: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px; /* Space between label and progress bar */
+  width: 100%;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 30px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* Progress Indicator */
+.progress {
+  height: 100%;
+  background-color: #3498db;
+  transition: width 0.1s ease-out;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.approved {
+  background-color: #2ecc71;
+}
+
+.rejected {
+  background-color: #e74c3c;
+}
+
+.progress-text {
+  font-size: 14px;
+}
+
+/* In-Process Button */
+.in-process-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  background-color: #f39c12;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.in-process-button.in-process {
+  background-color: #27ae60;
+}
+
+.in-process-button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Buttons for Approve/Reject */
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.reject-button, .approve-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reject-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.reject-button:hover {
+  background-color: #c0392b;
+}
+
+.approve-button {
+  background-color: #3498db;
+  color: white;
+}
+
+.approve-button:hover {
+  background-color: #2980b9;
+}
+
+/* Reset Button */
+.reset-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  background-color: #f39c12;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Status Text Below the Progress Bar */
+.status {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #34495e;
+}

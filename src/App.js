@@ -1,13 +1,10 @@
-import React from 'react';
-import { SearchBarContainer } from './components/SearchBarContainer';
+import {ProgressBar} from "./ProgressBar"
 import './App.css';
 
-const App = () => {
+function App() {
   return (
-    <div className="App">
-      <SearchBarContainer />
-    </div>
+   <ProgressBar/> 
   );
-};
+}
 
 export default App;
